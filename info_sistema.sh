@@ -9,3 +9,6 @@ df -h /
 echo "  "
 echo "=== ÚS DE LA MEMÒRIA RAM ==="
 free -h
+echo "   "
+echo "~~~~~~~~~~ PROCESSOS AMB MÉS CONSUM DE RAM ~~~~~~~~~~"
+ps aux --sort=%mem | head -n 6
